@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ABC-Keyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ABCKeyboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>57E44F1C1A7E2F1A00AECE59</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>57E44F301A7E2F7A00AECE59</key>
 		<dict>
 			<key>primary</key>
 			<true/>

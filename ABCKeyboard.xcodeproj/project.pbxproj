@@ -13,6 +13,9 @@
 		57E44F151A7E2F1A00AECE59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E44F141A7E2F1A00AECE59 /* Images.xcassets */; };
 		57E44F181A7E2F1A00AECE59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E44F161A7E2F1A00AECE59 /* LaunchScreen.xib */; };
 		57E44F241A7E2F1A00AECE59 /* ABCKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E44F231A7E2F1A00AECE59 /* ABCKeyboardTests.swift */; };
+		57E44F361A7E2F7A00AECE59 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E44F351A7E2F7A00AECE59 /* KeyboardViewController.swift */; };
+		57E44F391A7E2F7A00AECE59 /* ABC-Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 57E44F311A7E2F7A00AECE59 /* ABC-Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		57E44F3F1A7E301A00AECE59 /* ABCKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E44F3E1A7E301A00AECE59 /* ABCKeyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,28 @@
 			remoteGlobalIDString = 57E44F071A7E2F1900AECE59;
 			remoteInfo = ABCKeyboard;
 		};
+		57E44F371A7E2F7A00AECE59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57E44F001A7E2F1900AECE59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57E44F301A7E2F7A00AECE59;
+			remoteInfo = "ABC-Keyboard";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		57E44F3D1A7E2F7A00AECE59 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				57E44F391A7E2F7A00AECE59 /* ABC-Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		57E44F081A7E2F1A00AECE59 /* ABCKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABCKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +60,10 @@
 		57E44F1D1A7E2F1A00AECE59 /* ABCKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABCKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E44F221A7E2F1A00AECE59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57E44F231A7E2F1A00AECE59 /* ABCKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCKeyboardTests.swift; sourceTree = "<group>"; };
+		57E44F311A7E2F7A00AECE59 /* ABC-Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ABC-Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E44F341A7E2F7A00AECE59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57E44F351A7E2F7A00AECE59 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		57E44F3E1A7E301A00AECE59 /* ABCKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ABCKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +81,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57E44F2E1A7E2F7A00AECE59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +96,7 @@
 			children = (
 				57E44F0A1A7E2F1A00AECE59 /* ABCKeyboard */,
 				57E44F201A7E2F1A00AECE59 /* ABCKeyboardTests */,
+				57E44F321A7E2F7A00AECE59 /* ABC-Keyboard */,
 				57E44F091A7E2F1A00AECE59 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +106,7 @@
 			children = (
 				57E44F081A7E2F1A00AECE59 /* ABCKeyboard.app */,
 				57E44F1D1A7E2F1A00AECE59 /* ABCKeyboardTests.xctest */,
+				57E44F311A7E2F7A00AECE59 /* ABC-Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +149,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		57E44F321A7E2F7A00AECE59 /* ABC-Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				57E44F351A7E2F7A00AECE59 /* KeyboardViewController.swift */,
+				57E44F3E1A7E301A00AECE59 /* ABCKeyboard.xib */,
+				57E44F331A7E2F7A00AECE59 /* Supporting Files */,
+			);
+			path = "ABC-Keyboard";
+			sourceTree = "<group>";
+		};
+		57E44F331A7E2F7A00AECE59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57E44F341A7E2F7A00AECE59 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +177,12 @@
 				57E44F041A7E2F1900AECE59 /* Sources */,
 				57E44F051A7E2F1900AECE59 /* Frameworks */,
 				57E44F061A7E2F1900AECE59 /* Resources */,
+				57E44F3D1A7E2F7A00AECE59 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				57E44F381A7E2F7A00AECE59 /* PBXTargetDependency */,
 			);
 			name = ABCKeyboard;
 			productName = ABCKeyboard;
@@ -150,6 +207,23 @@
 			productReference = 57E44F1D1A7E2F1A00AECE59 /* ABCKeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		57E44F301A7E2F7A00AECE59 /* ABC-Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57E44F3A1A7E2F7A00AECE59 /* Build configuration list for PBXNativeTarget "ABC-Keyboard" */;
+			buildPhases = (
+				57E44F2D1A7E2F7A00AECE59 /* Sources */,
+				57E44F2E1A7E2F7A00AECE59 /* Frameworks */,
+				57E44F2F1A7E2F7A00AECE59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ABC-Keyboard";
+			productName = "ABC-Keyboard";
+			productReference = 57E44F311A7E2F7A00AECE59 /* ABC-Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +239,9 @@
 					57E44F1C1A7E2F1A00AECE59 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 57E44F071A7E2F1900AECE59;
+					};
+					57E44F301A7E2F7A00AECE59 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -183,6 +260,7 @@
 			targets = (
 				57E44F071A7E2F1900AECE59 /* ABCKeyboard */,
 				57E44F1C1A7E2F1A00AECE59 /* ABCKeyboardTests */,
+				57E44F301A7E2F7A00AECE59 /* ABC-Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +280,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E44F2F1A7E2F7A00AECE59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E44F3F1A7E301A00AECE59 /* ABCKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +311,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57E44F2D1A7E2F7A00AECE59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E44F361A7E2F7A00AECE59 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +326,11 @@
 			isa = PBXTargetDependency;
 			target = 57E44F071A7E2F1900AECE59 /* ABCKeyboard */;
 			targetProxy = 57E44F1E1A7E2F1A00AECE59 /* PBXContainerItemProxy */;
+		};
+		57E44F381A7E2F7A00AECE59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57E44F301A7E2F7A00AECE59 /* ABC-Keyboard */;
+			targetProxy = 57E44F371A7E2F7A00AECE59 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ABCKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ABCKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +489,30 @@
 			};
 			name = Release;
 		};
+		57E44F3B1A7E2F7A00AECE59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ABC-Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		57E44F3C1A7E2F7A00AECE59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ABC-Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,6 +538,14 @@
 			buildConfigurations = (
 				57E44F2B1A7E2F1A00AECE59 /* Debug */,
 				57E44F2C1A7E2F1A00AECE59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		57E44F3A1A7E2F7A00AECE59 /* Build configuration list for PBXNativeTarget "ABC-Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57E44F3B1A7E2F7A00AECE59 /* Debug */,
+				57E44F3C1A7E2F7A00AECE59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
